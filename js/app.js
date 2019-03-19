@@ -63,7 +63,7 @@ var portfolioCall = function(data) {
             var responseTitle = '<h5 class="modal-title" id="exampleModalLongTitle">%data%</h5>'.replace("%data%", response[data].title);
             var responseBody = '<p class="card-text">%data%</p>'.replace("%data%", response[data].body);
             var responseImage = '<img class="img-fluid" src="%data%">'.replace("%data%", response[data].image);
-            var responseLiveLink = response[data].linkLiveSite;
+            var responseLiveLink = response[data].linkLiveSite; // it shows the liveIcon if linkLiveSite is present is JSON
             var responseLink = response[data].linkGitHub;
             var responseGitHub = '<a href="' + responseLink + '" target="_blank"><div>%data%</div>'.replace("%data%", response[data].githubImage);
             var responseLive = '<a href="' + responseLiveLink + '" target="_blank"><div>%data%</div>'.replace("%data%", response[data].checkLive);
